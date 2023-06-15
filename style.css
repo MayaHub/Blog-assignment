@@ -1,7 +1,69 @@
 body {
-    border: 1px solid red;
+ font-family:Arial, Helvetica, sans-serif;
+ background-color: rgb(49, 218, 49);
+ border: 1px solid black;
+}
+
+header {
+    /* border: 1px solid orange; */
+    margin: 10px;
+    padding: 10px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 
+    "sb md md md"
+    "sb mc mc mc" ;
+}
+
+.sidebar {
+    /* border: 1px solid blue; */
+    grid-area: sb;
+    padding-left: 10px;
+    width: auto;
+    padding-top: 30px;
+    background-color:yellow;
+    margin: 10px;
+}
+
+.main-description {
+    /* border: 1px solid green; */
+    grid-area: md;
+    padding-left: 20px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+.main-cards {
+    /* border: 1px solid purple; */
+    grid-area: mc;
+    display: flex;
+    justify-content: space-around;
+    background-color:yellow;
+    margin: 10px;
 }
 
 .card {
-    border: 1px solid blue;
+    border: 1px solid blueviolet;
+    width: 250px;
+    text-align: center;
+    background-color:yellow;
+    margin: 10px;
+}
+
+footer {
+    /* border: 1px solid yellow; */
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+a {
+    color: #000;
 }

@@ -1,0 +1,50 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(49, 218, 49);
+    border: 1px solid black;
+   }
+
+   header {
+    /* border: 1px solid orange; */
+    margin: 10px;
+    padding: 10px;
+    background-color: yellow;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "mc mc ab"
+    "mc mc mo" ;
+}
+
+.about {
+    grid-area: ab;
+    background-color: orange;
+    padding: 15px;
+}
+
+.article {
+    grid-area: mc;
+    padding: 10px;
+}
+
+.more {
+    grid-area: mo;
+    padding: 15px;
+    background-color: lightblue;
+}
+
+
+footer {
+    /* border: 1px solid yellow; */
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
