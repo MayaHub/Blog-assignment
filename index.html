@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Blog Website Name</title>
 </head>
 
 <body>
     <header>
         <h1 class="header-name">The Greatest Blog of All Time</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="index.html">Contact Us</a>
+        </nav>
     </header>
 
     <main>
@@ -27,9 +31,10 @@
             <a href="index.html">February 2023</a> <br>
             <a href="index.html">January 2023</a> <br>
             <a href="index.html">December 2022</a> <br>
+
         </aside>
 
-        <section class="main-description">
+        <!-- <section class="main-description">
             <h2>Welcome!</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -43,23 +48,34 @@
                 mi quis hendrerit dolor magna eget est. Nulla facilisi cras fermentum odio eu feugiat pretium. Morbi
                 tristique senectus et netus.
             </p>
-        </section>
+        </section> -->
 
         <section class="main-cards">
             <div class="card" id="card-one">
-                <h4>This Story</h4>
-                <img src="https://picsum.photos/id/26/200/100" alt="various items on desk">
-                <a href="post.html"><p>This is What Happened...</p></a> 
+                <img class="card-pic" src="https://picsum.photos/id/26/200/100" alt="various items on desk">
+                <h3>This Story</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam.
+                </p>
+                <a href="/pages/post.html">
+                    <button class="card-btn">This is What Happened...</button>
+                </a>
             </div>
             <div class="card" id="card-two">
+                <img class="card-pic" src="https://picsum.photos/id/96/200/100" alt="video game controller">
                 <h4>That Story</h4>
-                <img src="https://picsum.photos/id/96/200/100" alt="video game controller">
-                <a href="index.html"><p>What Had Happened Was...</p></a> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum a arcu cursus vitae congue.</p>
+                <a href="index.html">
+                    <button class="card-btn">What Had Happened Was...</button>
+                </a>
             </div>
             <div class="card" id="card-three">
+                <img class="card-pic" src="https://picsum.photos/id/129/200/100" alt="couple sitting on bench facing away from camera">
                 <h4>The Other Story</h4>
-                <img src="https://picsum.photos/id/129/200/100" alt="couple sitting on bench facing away from camera">
-                <a href="index.html"><p>Ok, So Boom!</p></a> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Montes nascetur ridiculus mus mauris.</p>
+                <a href="index.html">
+                    <button class="card-btn">Ok, So Boom!</button>
+                </a>
             </div>
         </section>
     </main>
