@@ -18,7 +18,7 @@ main {
     grid-template-columns: auto auto auto;
     grid-template-areas:
     "mc mc ab"
-    "mc mc mo" ;
+    "mc mc ab" ;
 }
 
 .profile-pic {
@@ -41,13 +41,6 @@ main {
     margin: 10px;
 }
 
-.more {
-    border: 5px solid orange;
-    grid-area: mo;
-    padding: 15px;
-    background-color: yellow;
-    margin: 10px;
-}
 
 /* footer {
     border: 5px solid orange;

@@ -1,0 +1,12 @@
+@import "common.css";
+
+/* mobile size */
+@media screen and (max-width: 768px) {
+
+    .main-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
