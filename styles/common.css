@@ -3,20 +3,12 @@ body {
     background-color: rgb(49, 218, 49);
 }
 
-header {
+header, footer {
     border: 5px solid orange;
     margin: 10px;
     display: flex;
-    justify-content: end;
-    background-color: yellow;
-}
-
-footer {
-    border: 5px solid orange;
-    display: flex;
-    background-color: yellow;
     justify-content: center;
-    margin: 10px;
+    background-color: yellow;
 }
 
 h5 {
