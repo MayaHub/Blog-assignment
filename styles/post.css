@@ -1,36 +1,50 @@
 @import "common.css";
-@import "button.css";
 
-/* body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(49, 218, 49);
-    border: 1px solid black;
-   } */
-
-   /* header {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-} */
-
-main {
+.main-content {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 70% 30%;
     grid-template-areas:
-    "mc mc ab"
-    "mc mc ab" ;
+    "mc ab"
+    "mc ab" ;
+    padding: 0 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
 }
 
 .profile-pic {
-    width: 300px;
-    height: 200px;
+    width: 100%;
 }
+
 .about {
     border: 5px solid orange;
     grid-area: ab;
     background-color: yellow;
-    padding: 15px;
+    padding: 10px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#connect-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar-item {
+    margin-bottom: 5px;
+}
+
+.ab-title {
+    font-weight: bold;
 }
 
 .article {
@@ -39,14 +53,30 @@ main {
     grid-area: mc;
     padding: 10px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+.caption {
+    padding-bottom: 10px;
+    font: 12px Georgia, serif;
+}
 
-/* footer {
-    border: 5px solid orange;
-    display: flex;
-    background-color: yellow;
-    align-items: center;
-    justify-content: space-around;
-    margin: 10px;
-} */
+q {
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .profile-pic {
+        width: 50%;
+        padding-top: 20px;
+    }
+
+}

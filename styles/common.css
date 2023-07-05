@@ -11,7 +11,6 @@ header {
     background-color: yellow;
 }
 
-
 footer {
     border: 5px solid orange;
     display: flex;
@@ -22,13 +21,10 @@ footer {
 
 h5 {
     font-weight: bold;
-
 }
 
 ul {
     list-style-type: none;
-    /* display: flex; */
-
 }
 
 li {
@@ -67,4 +63,8 @@ a {
     color: white;
     background-color: rgb(25, 187, 25);
     border: 2px solid orange;
+}
+
+.card-title {
+    text-decoration: underline;
 }
